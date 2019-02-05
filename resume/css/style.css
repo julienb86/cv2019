@@ -74,7 +74,7 @@ h1 {
   font-family: "Gafata", sans-serif;
   display: grid;
   grid-column-gap: 20px;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-areas: "nav nav" "image header" "contact section" "skills section" "about section" "about section" "hobbies section" "titre titre" "projects projects";
   margin: 15px 0; }
 
@@ -168,7 +168,7 @@ section {
 .info {
   display: grid;
   margin-top: 20px;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-areas: "date description"; }
   .info .info-year {
     display: flex;
@@ -177,7 +177,7 @@ section {
     .info .info-year .fa-dot-circle {
       color: #f4f4f4; }
     .info .info-year .year {
-      margin: 20px 0 5px 0; }
+      margin: 0 15px; }
 
 .description ul {
   margin-top: 10px; }
@@ -311,6 +311,8 @@ footer {
     grid-template-columns: 1fr;
     grid-template-areas: "year" "description";
     margin-top: 0; }
+    .info .info-year .year {
+      margin: 10px; }
 
   .about {
     margin-top: 20px; }

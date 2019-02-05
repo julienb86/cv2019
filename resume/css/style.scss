@@ -117,7 +117,7 @@ h1{
   font-family:$getafa;
   display: grid;
   grid-column-gap: 20px;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-areas:
   "nav nav"
   "image header"
@@ -237,7 +237,7 @@ section{
 .info{
   display: grid;
   margin-top: 20px;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-areas:
   "date description";
   .info-year{
@@ -246,7 +246,7 @@ section{
       color: $white-color;
     }
     .year{
-      margin: 20px 0 5px 0;
+      margin: 0 15px;
     }
   }
 }
@@ -401,6 +401,11 @@ footer{
       "year"
       "description";
       margin-top: 0;
+      .info-year{
+        .year{
+          margin: 10px;
+        }
+      }
     }
     .about{
       margin-top: 20px;
