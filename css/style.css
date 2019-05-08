@@ -145,7 +145,7 @@ header {
 
 .card:hover .card-img img {
   opacity: 0.6;
-  height: 250px;
+  height: 200px;
   transform: scale(1.2); }
 .card:hover .card-description {
   opacity: 1;
