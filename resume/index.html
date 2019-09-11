@@ -1,155 +1,202 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Gafata" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Julien Bouafia</title>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Gafata"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Julien Bouafia</title>
 
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-138297118-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-
-<!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138297118-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-138297118-1');
-</script>
-
-
-
-</head>
-<body>
-  <!-- NAVBAR -->
-  <div class="nav">
+      gtag("config", "UA-138297118-1");
+    </script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="nav">
       <div class="logo">
         <a href="../index.html">jb</a>
       </div>
-    <input type="checkbox" id="toggle">
-    <div class="menu">
-      <a href="../index.html#project">Projets</a>
-      <a href="#">Qui suis-je?</a>
-      <a href="#contact">Me contacter</a>
-    </div>
-    <label for="toggle" class="button-toggle"><i class="fas fa-bars"></i></label>
-  </div>
-
-  <!-- GRID -->
-  <div class="grid">
-    <!-- image  -->
-    <div class="img aside">
-      <img src="./img/photo.jpg" alt="photo de profil">
-    </div>
-  <!--   contact    -->
-    <div class="contact">
-      <h3 class="title">Contact</h3>
-      <ul>
-        <li><address><i class="fas fa-map-marker-alt"></i>9 rue de l'oise <br>60200 Compiègne
-      </address></li>
-        <li><i class="fas fa-phone-volume"></i>0674492937</li>
-        <li><i class="fas fa-at"></i>julien.bouafia@gmail.com</li>
-      </ul>
-    </div>
-  <!-- Professional skills  -->
-    <div class="skills">
-      <h3 class="title">Compétences professionnelles</h3>
-      <ul>
-        <li>HTML5/CSS3/Javascript</li>
-        <li>Responsive Design</li>
-        <li>Bootstrap 4</li>
-        <li>NodeJs/MongoDB/Express/OWASP</li>
-        <li>VueJS</li>
-      </ul>
-    </div>
-  <!-- About me -->
-    <div class="about">
-      <h3 class="title">à propos de moi</h3>
-      <p>Actuellement en reconversion professionnelle pour devenir développeur web notamment pour la création de sites et applications web, je suis une formation chez Openclassrooms sur le parcours anglais Junior Web developer.
-Vous pouvez suivre mon travail sur le lien ci-dessous: <br>
-      <a href="https://github.com/julienb86" target="_blank">GitHub</a>
-      </p>
-    </div>
-  <!-- Hobbies -->
-    <div class="hobbies">
-      <h3 class="title">Hobbies</h3>
-      <ul class="activities">
-        <li><i class="fas fa-basketball-ball"></i></li>
-        <li><i class="fas fa-plane"></i></li>
-        <li><i class="fas fa-music"></i></li>
-      </ul>
-    </div>
-  <!-- end of the aside part -->
-
-  <!-- HEADER -->
-    <header>
-      <h1>Julien<span> Bouafia</span></h1>
-      <h3>Développeur web junior</h3>
-      <hr class="header-line">
-    </header>
-
-  <!-- MAIN SECTION -->
-    <section>
-      <div class="education">
-        <h3 class="presentation"><i class="fas fa-user-graduate"></i> éducation</h3>
-         <hr class="education-line">
-        <div class="info">
-          <div class="info-year">
-            <i class="far fa-dot-circle"></i>
-            <ul class="year">
-              <li>2018 - 2019</li>
-              <li>Paris</li>
-            </ul>
-          </div>
-          <div class="description">
-            <h4>Openclassrooms</h4>
-            <p>Développeur web junior</p>
-            <ul>
-              <li>Découper, assembler et intégrer tous les éléments d’une maquette graphique en HTML5 et CSS.</li>
-              <li>Ajouter du contenu audio et vidéo en HTML5.</li>
-              <li>Animer les pages web avec CSS3.</li>
-              <li>Appliquer les standards du Web et les normes en vigueur.</li>
-              <li>Construire un site web fluide s’adaptant à tout type d’écran (web, smartphone et tablette).</li>
-              <li>Améliorer le référencement naturel en utilisant les balises selon leur sémantique.</li>
-              <li>Faire réagir la page web en fonction des actions de l’utilisateur en JavaScript.</li>
-              <li>Se connecter à un service web pour exploiter des données tierces (API).</li>
-              <li>Programmer en orienté objet.</li>
-              <li>Gérer les comptes utilisateurs.</li>
-              <li>Concevoir un site maintenable grâce à la gestion des erreurs et exceptions.</li>
-              <li>Créer, gérer et afficher le contenu d’une base de données.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="info">
-          <div class="info-year">
-            <i class="far fa-dot-circle"></i>
-            <ul class="year">
-              <li>2015 - 2016</li>
-              <li>Poitiers</li>
-            </ul>
-          </div>
-          <div class="description">
-            <h4>Iae Poitiers</h4>
-            <p>Master Administration des Entreprises</p>
-            <ul>
-              <li>Statistiques appliquées aux enjeux business.</li>
-              <li>Marketing.</li>
-              <li>Droit social, des affaires.</li>
-              <li>Comptabilité générale et analytique.</li>
-              <li>Politique financière.</li>
-              <li>Contrôle de gestion.</li>
-            </ul>
-          </div>
-        </div>
+      <input type="checkbox" id="toggle" />
+      <div class="menu">
+        <a href="../index.html#project">Projets</a>
+        <a href="#">Qui suis-je?</a>
+        <a href="#contact">Me contacter</a>
       </div>
-      <div class="experiences">
-        <h3 class="presentation"><i class="fas fa-briefcase"></i> expériences</h3>
-        <hr class="education-line">
+      <label for="toggle" class="button-toggle"
+        ><i class="fas fa-bars"></i
+      ></label>
+    </div>
+
+    <!-- GRID -->
+    <div class="grid">
+      <!-- image  -->
+      <div class="img aside">
+        <img src="./img/photo.jpg" alt="photo de profil" />
+      </div>
+      <!--   contact    -->
+      <div class="contact">
+        <h3 class="title">Contact</h3>
+        <ul>
+          <li>
+            <address>
+              <i class="fas fa-map-marker-alt"></i>9 rue de l'oise <br />60200
+              Compiègne
+            </address>
+          </li>
+          <li><i class="fas fa-phone-volume"></i>06.74.49.29.37</li>
+          <li><i class="fas fa-at"></i>julienbouafia@gmail.com</li>
+        </ul>
+      </div>
+      <!-- Professional skills  -->
+      <div class="skills">
+        <h3 class="title">Compétences professionnelles</h3>
+        <ul>
+          <li>HTML5/CSS3/Javascript</li>
+          <li>React / VueJS / VueX</li>
+          <li>Responsive Design</li>
+          <li>Bootstrap 4</li>
+          <li>NodeJs/MongoDB/Express/OWASP</li>
+        </ul>
+      </div>
+      <!-- About me -->
+      <div class="about">
+        <h3 class="title">à propos de moi</h3>
+        <p>
+          Actuellement en reconversion professionnelle pour devenir développeur
+          web notamment pour la création de sites et applications web, je suis
+          une formation chez Openclassrooms sur le parcours anglais Junior Web
+          developer. Vous pouvez suivre mon travail sur le lien ci-dessous:
+          <br />
+          <a href="https://github.com/julienb86" target="_blank">GitHub</a>
+        </p>
+      </div>
+      <!-- Hobbies -->
+      <div class="hobbies">
+        <h3 class="title">Hobbies</h3>
+        <ul class="activities">
+          <li><i class="fas fa-basketball-ball"></i></li>
+          <li><i class="fas fa-plane"></i></li>
+          <li><i class="fas fa-music"></i></li>
+        </ul>
+      </div>
+      <!-- end of the aside part -->
+
+      <!-- HEADER -->
+      <header>
+        <h1>Julien<span> Bouafia</span></h1>
+        <h3>Développeur web junior</h3>
+        <hr class="header-line" />
+      </header>
+
+      <!-- MAIN SECTION -->
+      <section>
+        <div class="education">
+          <h3 class="presentation">
+            <i class="fas fa-user-graduate"></i> éducation
+          </h3>
+          <hr class="education-line" />
+          <div class="info">
+            <div class="info-year">
+              <i class="far fa-dot-circle"></i>
+              <ul class="year">
+                <li>2018 - 2019</li>
+                <li>Paris</li>
+              </ul>
+            </div>
+            <div class="description">
+              <h4>Openclassrooms</h4>
+              <p>Développeur web junior</p>
+              <ul>
+                <li>
+                  Découper, assembler et intégrer tous les éléments d’une
+                  maquette graphique en HTML5 et CSS.
+                </li>
+                <li>Ajouter du contenu audio et vidéo en HTML5.</li>
+                <li>Animer les pages web avec CSS3.</li>
+                <li>
+                  Appliquer les standards du Web et les normes en vigueur.
+                </li>
+                <li>
+                  Construire un site web fluide s’adaptant à tout type d’écran
+                  (web, smartphone et tablette).
+                </li>
+                <li>
+                  Améliorer le référencement naturel en utilisant les balises
+                  selon leur sémantique.
+                </li>
+                <li>
+                  Faire réagir la page web en fonction des actions de
+                  l’utilisateur en JavaScript.
+                </li>
+                <li>
+                  Se connecter à un service web pour exploiter des données
+                  tierces (API).
+                </li>
+                <li>Programmer en orienté objet.</li>
+                <li>Gérer les comptes utilisateurs.</li>
+                <li>
+                  Concevoir un site maintenable grâce à la gestion des erreurs
+                  et exceptions.
+                </li>
+                <li>
+                  Créer, gérer et afficher le contenu d’une base de données.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-year">
+              <i class="far fa-dot-circle"></i>
+              <ul class="year">
+                <li>2015 - 2016</li>
+                <li>Poitiers</li>
+              </ul>
+            </div>
+            <div class="description">
+              <h4>Iae Poitiers</h4>
+              <p>Master Administration des Entreprises</p>
+              <ul>
+                <li>Statistiques appliquées aux enjeux business.</li>
+                <li>Marketing.</li>
+                <li>Droit social, des affaires.</li>
+                <li>Comptabilité générale et analytique.</li>
+                <li>Politique financière.</li>
+                <li>Contrôle de gestion.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="experiences">
+          <h3 class="presentation">
+            <i class="fas fa-briefcase"></i> expériences
+          </h3>
+          <hr class="education-line" />
           <div class="info">
             <div class="info-year">
               <i class="far fa-dot-circle"></i>
@@ -162,7 +209,9 @@ Vous pouvez suivre mon travail sur le lien ci-dessous: <br>
               <h4>Acadomia</h4>
               <p>Conseiller pédagogique</p>
               <ul>
-                <li>Développer le portefeuille client des secteurs 86 et 79.</li>
+                <li>
+                  Développer le portefeuille client des secteurs 86 et 79.
+                </li>
                 <li>Mettre en place de nouveaux produits.</li>
                 <li>Analyser les besoins du client.</li>
                 <li>Proposer les produits adaptés.</li>
@@ -182,8 +231,13 @@ Vous pouvez suivre mon travail sur le lien ci-dessous: <br>
               <h4>Akaoka</h4>
               <p>Assistant chef de produits</p>
               <ul>
-                <li>Développer de nouvelles destinations (Nicaragua, Suède...).</li>
-                <li>Web-marketing : mise en ligne de plus de 100 voyages sur le site Akaoka : Google analytics, Google AdWords.</li>
+                <li>
+                  Développer de nouvelles destinations (Nicaragua, Suède...).
+                </li>
+                <li>
+                  Web-marketing : mise en ligne de plus de 100 voyages sur le
+                  site Akaoka : Google analytics, Google AdWords.
+                </li>
                 <li>Négocier avec les prestataires de service.</li>
               </ul>
             </div>
@@ -209,7 +263,7 @@ Vous pouvez suivre mon travail sur le lien ci-dessous: <br>
         </div>
         <!-- QUALITY -->
         <h3 class="presentation"><i class="fas fa-plus-square"></i> en plus</h3>
-        <hr class="education-line">
+        <hr class="education-line" />
         <div class="quality">
           <div class="project">
             <h4 class="quality-title">Gestion de projets</h4>
@@ -222,22 +276,33 @@ Vous pouvez suivre mon travail sur le lien ci-dessous: <br>
           <div class="project">
             <h4 class="quality-title">Rigueur, méthode</h4>
             <ul class="quality-items">
-              <li>Organisation, planification, définition des enjeux et des contraintes.</li>
+              <li>
+                Organisation, planification, définition des enjeux et des
+                contraintes.
+              </li>
             </ul>
           </div>
         </div>
-    </section>
-  </div>
-  <footer id="contact">
-    <div class="social-network">
-      <h3>Me contacter:</h3>
-      <p>julien.bouafia@gmail.com</p>
-      <a href="https://github.com/julienb86" target="_blank"><i class="fab fa-github-square"></i></a>
-      <a href="https://www.linkedin.com/in/julien-bouafia-developpeur-web/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://twitter.com/julienBouafia" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      </section>
     </div>
-    <p>&copy; Julien Bouafia - 2019</p>
-    <p>Photo by Blake Connally on Unsplash</p>
-  </footer>
-</body>
+    <footer id="contact">
+      <div class="social-network">
+        <h3>Me contacter:</h3>
+        <p>julienbouafia@gmail.com</p>
+        <a href="https://github.com/julienb86" target="_blank"
+          ><i class="fab fa-github-square"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/julien-bouafia-developpeur-web/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://twitter.com/julienBouafia" target="_blank"
+          ><i class="fab fa-twitter-square"></i
+        ></a>
+      </div>
+      <p>&copy; Julien Bouafia - 2019</p>
+      <p>Photo by Blake Connally on Unsplash</p>
+    </footer>
+  </body>
 </html>

@@ -1,5 +1,5 @@
 //COLORS
-$blue-color: #1DE9B6;
+$blue-color: #1de9b6;
 $gray-color: #2c2c2c;
 $white-color: #f4f4f4;
 $black-color: #070707;
@@ -9,7 +9,9 @@ $font-size: 20px;
 // media queries
 $small: "all and (max-width:650px)";
 
-body, html, ul{
+body,
+html,
+ul {
   margin: 0px;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -17,35 +19,35 @@ body, html, ul{
   list-style: none;
   margin: 0 auto;
   max-width: 1280px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   background: $gray-color;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
-.title{
+.title {
   color: $white-color;
   text-transform: capitalize;
   text-align: center;
   font-size: $font-size;
 }
 /* GRID  */
-.grid{
+.grid {
   display: grid;
   grid-template-columns: repeat 1fr;
   grid-template-areas:
-  "header"
-  "skills"
-  "project"
-  "footer"
+    "header"
+    "skills"
+    "project"
+    "footer";
 }
 // HEADER
-header{
+header {
   grid-area: header;
 }
 //BACKGROUND
 .background {
-  .background-text{
+  .background-text {
     height: 100%;
     color: $white-color;
     font-weight: bold;
@@ -53,116 +55,186 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    h1{
+    h1 {
       text-transform: capitalize;
       margin: 0;
       font-size: $font-size + 50px;
     }
-    h2{
+    h2 {
       color: $blue-color;
       text-transform: capitalize;
       margin: 0;
-      font-size: $font-size *2;
+      font-size: $font-size * 2;
     }
-    h3{
+    h3 {
       @extend .title;
     }
   }
-  .img{
+  .img {
     background: url("../img/background5.jpg");
     height: 100vh;
     background-position: center;
     background-size: cover;
     display: flex;
     animation: opening 4s forwards;
-    -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
-  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    -webkit-clip-path: polygon(
+      50% 0%,
+      90% 20%,
+      100% 60%,
+      75% 100%,
+      25% 100%,
+      0% 60%,
+      10% 20%
+    );
+    clip-path: polygon(
+      50% 0%,
+      90% 20%,
+      100% 60%,
+      75% 100%,
+      25% 100%,
+      0% 60%,
+      10% 20%
+    );
   }
 }
 @keyframes opening {
-  0%{-webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);}
-  50%{-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 0 0);
-clip-path: polygon(50% 0%, 100% 0, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 0 0);}
-100%{-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 75% 100%, 25% 100%, 0 100%, 0 0);
-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 75% 100%, 25% 100%, 0 100%, 0 0);}
+  0% {
+    -webkit-clip-path: polygon(
+      50% 0%,
+      90% 20%,
+      100% 60%,
+      75% 100%,
+      25% 100%,
+      0% 60%,
+      10% 20%
+    );
+    clip-path: polygon(
+      50% 0%,
+      90% 20%,
+      100% 60%,
+      75% 100%,
+      25% 100%,
+      0% 60%,
+      10% 20%
+    );
+  }
+  50% {
+    -webkit-clip-path: polygon(
+      50% 0%,
+      100% 0,
+      100% 60%,
+      75% 100%,
+      25% 100%,
+      0% 60%,
+      0 0
+    );
+    clip-path: polygon(
+      50% 0%,
+      100% 0,
+      100% 60%,
+      75% 100%,
+      25% 100%,
+      0% 60%,
+      0 0
+    );
+  }
+  100% {
+    -webkit-clip-path: polygon(
+      50% 0%,
+      100% 0,
+      100% 100%,
+      75% 100%,
+      25% 100%,
+      0 100%,
+      0 0
+    );
+    clip-path: polygon(
+      50% 0%,
+      100% 0,
+      100% 100%,
+      75% 100%,
+      25% 100%,
+      0 100%,
+      0 0
+    );
+  }
 }
 /* NAVIGATION BAR */
-.nav{
+.nav {
   display: flex;
   justify-content: center;
   padding: 20px;
   background-color: $black-color;
-    .button-toggle{
-      display: none;
-      }
-    .menu {
-      a{
-        text-decoration: none;
-        color: $white-color;
-        margin: 20px;
-        padding: 10px;
-        border-bottom: 2px solid $black-color;
-        &:hover{
-          @extend a;
-          border-bottom: 2px solid $blue-color;
-        }
-      }
-    }
-    .logo{
-      flex: 1;
-      a {
-        text-transform: uppercase;
-        text-align: center;
-        text-decoration: none;
-        color: $blue-color;
-        font-weight: bold;
-        border-radius: 50%;
-        border: 1px solid $blue-color;
-        padding: 5px;
+  .button-toggle {
+    display: none;
+  }
+  .menu {
+    a {
+      text-decoration: none;
+      color: $white-color;
+      margin: 20px;
+      padding: 10px;
+      border-bottom: 2px solid $black-color;
+      &:hover {
+        @extend a;
+        border-bottom: 2px solid $blue-color;
       }
     }
-    #toggle{
-      display: none;
+  }
+  .logo {
+    flex: 1;
+    a {
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+      color: $blue-color;
+      font-weight: bold;
+      border-radius: 50%;
+      border: 1px solid $blue-color;
+      padding: 5px;
     }
+  }
+  #toggle {
+    display: none;
+  }
 }
 
 // PROJECTS
-.projects{
+.projects {
   grid-area: project;
   margin-bottom: 10px;
-  .fa-arrow-circle-up{
+  .fa-arrow-circle-up {
     color: $blue-color;
-    font-size: $font-size *2;
+    font-size: $font-size * 2;
     transform: rotate(0deg) scale(1);
     transition: all 0.5s ease;
-    &:hover{
+    &:hover {
       transform: rotate(360deg) scale(1.1);
     }
   }
 }
 
-  .cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    a{
-      text-decoration: none;
-      margin: 20px 0;
-    }
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  a {
+    text-decoration: none;
+    margin: 20px 0;
+  }
 }
 
-
-.card{
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-color: $blue-color;
   height: 430px;
   width: 350px;
   overflow: hidden;
-  .card-img{
+
+  .card-img {
     background-color: #000;
     overflow: hidden;
-    img{
+    img {
       height: 350px;
       width: 350px;
       background-position: center;
@@ -173,97 +245,96 @@ clip-path: polygon(50% 0%, 100% 0, 100% 100%, 75% 100%, 25% 100%, 0 100%, 0 0);}
       transform: scale(1);
     }
   }
-  .card-title{
-   h3{
-    color: $black-color;
-    font-size: $font-size;
+  .card-title {
+    h3 {
+      color: $black-color;
+      font-size: $font-size;
     }
-    .card-description{
+    .card-description {
       opacity: 0;
       transform: translateY(-50px);
       transition: opacity transform 0.5s;
       transition-delay: 0.1s;
-      p{
+      p {
         text-decoration: none;
         color: $black-color;
       }
     }
   }
 }
-.card:hover{
-  .card-img{
-    img{
-        opacity: 0.6;
-        height: 200px;
-        transform: scale(1.2);
+.card:hover {
+  .card-img {
+    img {
+      opacity: 0.6;
+      height: 200px;
+      transform: scale(1.2);
     }
   }
-  .card-description{
+  .card-description {
     opacity: 1;
     transform: translateY(0);
   }
 }
 // FOOTER
-footer{
+footer {
   grid-area: footer;
   background-color: $black-color;
   padding: 10px;
   color: $white-color;
   text-align: center;
   margin: 0;
-  .social-network{
-    h3{
+  .social-network {
+    h3 {
       font-size: $font-size + 5px;
       color: $white-color;
     }
-    p{
+    p {
       font-size: $font-size;
       color: $white-color;
     }
-    .fab{
+    .fab {
       font-size: $font-size + 10px;
       color: $white-color;
       padding: 5px;
     }
   }
-  p{
+  p {
     font-size: $font-size - 10px;
   }
 }
 // TOOGLE menu
 @media #{$small} {
-  .background{
-    .img{
+  .background {
+    .img {
       height: 90vh;
     }
   }
-  .nav{
+  .nav {
     justify-content: center;
     height: auto;
-    .menu{
+    .menu {
       display: none;
-      a{
+      a {
         display: flex;
         flex-direction: column;
         margin: 20px;
       }
     }
 
-    .button-toggle{
+    .button-toggle {
       display: block;
       cursor: pointer;
       padding: 0;
-      .fa-bars{
+      .fa-bars {
         color: $white-color;
         font-size: $font-size;
       }
     }
   }
-  #toggle:checked + .menu{
+  #toggle:checked + .menu {
     display: block;
   }
   .logo {
     font-size: $font-size;
-    }
-
+  }
 }
