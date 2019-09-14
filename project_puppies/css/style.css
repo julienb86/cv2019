@@ -1,81 +1,83 @@
-body, html, ul{
+body,
+html,
+ul {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Coiny', cursive;
+  font-family: "Coiny", cursive;
   list-style: none;
   scroll-behavior: smooth;
 }
 
 /* ADD */
-.add{
-  background-color: #36C1F1;
-  color: #FFFFFF;
+.add {
+  background-color: #36c1f1;
+  color: #ffffff;
   height: 5%;
   padding: 10px;
 }
-.add p{
+.add p {
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
 }
-.fa-gift{
+.fa-gift {
   font-size: 1.5rem;
-  color: #FF0000;
+  color: #ff0000;
   opacity: 0.6;
 }
 /* NAVIGATION BAR */
-.navbar{
+.navbar {
   position: sticky;
-  top:0;
+  top: 0;
   height: 25%;
   padding: 20px;
   grid-area: navigation;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   text-transform: capitalize;
   z-index: 1;
 }
-.logo{
+.logo {
   flex: 1;
 }
-.fa-socks{
+.fa-socks {
   font-size: 2rem;
-  color: #20D1F5;
+  color: #20d1f5;
 }
-.navbar-items{
+.navbar-items {
   display: flex;
   flex-wrap: wrap;
 }
 
-.navbar-items li a{
+.navbar-items li a {
   margin: 25px;
   text-decoration: none;
   padding: 15px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   transition: background-color, color 0.8s ease;
 }
-.navbar-items li a:hover{
-  background-color: #36C1F1;
+.navbar-items li a:hover {
+  background-color: #36c1f1;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 15px;
 }
-.btn button a{
+.btn button a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.toggle{
+.toggle {
   display: none;
 }
-#toggle{
+#toggle {
   display: none;
 }
 
 /* BACKGROUND  */
-.background{
+.background {
   background-image: url("../img/background.jpg");
   height: 100vh;
   background-position: center;
@@ -86,25 +88,25 @@ body, html, ul{
   margin-bottom: 50px;
 }
 .background .background-content {
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.background .background-content h1{
+.background .background-content h1 {
   font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: bold;
 }
-.background .background-content h2{
+.background .background-content h2 {
   padding-bottom: 20px;
   font-size: 2rem;
   font-weight: lighter;
   text-align: center;
 }
-.background .background-content .btn button{
-  background-color: #4BC7F3;
+.background .background-content .btn button {
+  background-color: #4bc7f3;
   border: none;
   padding: 15px;
   border-radius: 20px;
@@ -116,69 +118,63 @@ body, html, ul{
   font-weight: bold;
   transform: translateY(0);
   transition: transform 0.7s ease;
-
 }
-.background .background-content .btn button:hover{
+.background .background-content .btn button:hover {
   transform: translateY(-5%);
-
 }
-
 
 /* PRODUCTS */
-.products{
+.products {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-main h1{
+main h1 {
   text-align: center;
   text-transform: uppercase;
   font-size: 2.5rem;
 }
 
-.card{
+.card {
   position: relative;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-  transition: box-shadow .5s ease;
+  transition: box-shadow 0.5s ease;
   margin-bottom: 50px;
 }
-.card:hover{
+.card:hover {
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.7);
-
 }
-.card-img img{
+.card-img img {
   height: 350px;
   width: 300px;
 }
-.card-info{
+.card-info {
   position: absolute;
   top: 10px;
   left: 10px;
   font-size: 1.4rem;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.card-body{
+.card-body {
   text-align: center;
   padding: 15px;
   margin: 15px;
   font-size: 1.5rem;
 }
-.card-title a{
+.card-title a {
   text-decoration: none;
-  color: #36C1F1;
+  color: #36c1f1;
 }
-.card-price-presale{
+.card-price-presale {
   text-decoration: line-through;
   color: gray;
   font-weight: lighter;
 }
 
-
-
 /* SHOP BUTTON */
-.btn button{
-  background-color: #FFB81F;
+.btn button {
+  background-color: #ffb81f;
   border: none;
   padding: 15px;
   border-radius: 20px;
@@ -191,36 +187,35 @@ main h1{
   transform: translateY(0);
   transition: transform 0.5s ease;
 }
-.shop .btn button:hover{
+.shop .btn button:hover {
   transform: translateY(-5%);
 }
-.shop{
+.shop {
   display: flex;
   justify-content: center;
   align-items: center;
   /* margin-bottom: 20px; */
 }
 /* ABOUT */
-.about{
+.about {
   margin: 20px 0;
 }
-.about-comment{
+.about-comment {
   display: flex;
 }
-.about-comment p{
+.about-comment p {
   margin: 10px;
   text-align: justify;
   align-self: center;
-
 }
-.about-comment img{
+.about-comment img {
   height: 300px;
   width: 300px;
   border-radius: 50%;
 }
 /* FOOTER */
-.contact{
-  background: #2CC3F2;
+.contact {
+  background: #2cc3f2;
   padding: 30px;
   margin-top: 100px;
   display: flex;
@@ -229,47 +224,52 @@ main h1{
   flex-direction: column;
 }
 
-.contact .fa-socks{
+.contact .fa-socks {
   color: white;
   font-size: 2.5rem;
 }
 
-
 /* MEDIA QUERIES */
 
-@media all and (max-width:730px) {
-  .toggle{
+@media all and (max-width: 730px) {
+  .toggle {
     position: absolute;
     float: right;
     top: 10px;
     right: 20px;
     display: block;
     font-size: 1.8rem;
-    color: #2CC3F2;
+    color: #2cc3f2;
   }
-  #toggle{
+
+  #toggle {
     display: none;
   }
-  .navbar-items{
+  .navbar-items {
     display: none;
   }
-  .navbar-items li{
+  .navbar-items li {
     display: flex;
   }
 
-  #toggle:checked + .navbar-items{
+  #toggle:checked + .navbar-items {
     display: block;
     flex-direction: column;
   }
-  .card{
+  .card {
     margin: 10px;
   }
 
-  .about-comment img{
-    height: 100px;
-    width: 100px;
+  .about-comment {
+    align-items: center;
   }
-  .contact{
+
+  .about-comment img {
+    max-height: 75px;
+    max-width: 75px;
+    border-radius: 50%;
+  }
+  .contact {
     margin-top: 20px;
   }
 }
