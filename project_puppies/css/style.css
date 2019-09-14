@@ -35,7 +35,6 @@ ul {
   grid-area: navigation;
   background-color: #ffffff;
   display: flex;
-  align-items: center;
   text-transform: capitalize;
   z-index: 1;
 }
@@ -254,7 +253,6 @@ main h1 {
 
   #toggle:checked + .navbar-items {
     display: block;
-    flex-direction: column;
   }
   .card {
     margin: 10px;
